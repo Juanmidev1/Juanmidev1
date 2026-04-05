@@ -1,5 +1,5 @@
 <h1 align="center">Eltortilla1</h1>
-<h3 align="center">Ingeniero de Sistemas y Fundador de <a href="https://iberax.net/" target="_blank">IberaX</a></h3>
+<h3 align="center">Desarrollador, Arquitecto de Soluciones y Fundador de <a href="https://iberax.net/" target="_blank">IberaX</a></h3>
 
 <p align="center">
   <a href="https://iberax.net/" target="_blank">
@@ -21,28 +21,17 @@
 
 ## 👨‍💻 Sobre mí
 
-Soy **Tortilla**, desarrollador y arquitecto de sistemas apasionado por las nuevas tecnologías y la automatización inteligente. Actualmente lidero **IberaX**, una consultoría de ingeniería donde no vendemos botones mágicos ni plantillas genéricas; diseñamos sistemas deterministas desde cero.
+Soy **Tortilla**, desarrollador autodidacta y arquitecto de soluciones apasionado por las nuevas tecnologías y la automatización inteligente. Mi formación se basa en años de práctica, investigación constante y la resolución de problemas reales, lo que me permite abordar el desarrollo desde una perspectiva pragmática, eficiente y sin rodeos.
 
-Mi enfoque combina un profundo pensamiento crítico con rigor técnico, asegurando que cada línea de código tenga un impacto real en el negocio y se convierta en un activo auditable y escalable.
-
----
-
-## 🚀 IberaX & Trayectoria
-
-**[IberaX](https://iberax.net/)** es mi proyecto principal. Construimos arquitecturas para negocios que no improvisan.
-* **Sistemas Inteligentes:** Eliminamos la dependencia operativa y las tareas redundantes.
-* **Arquitectura Modular:** Diseños con bajo acoplamiento para evitar la deuda técnica heredada.
-* **Inteligencia Operativa:** Entendemos el negocio antes de escribir código, traduciendo la estrategia en lógica ejecutable.
-
-*Anteriormente:* Fundador de **Tortilla Scripts**, desarrollando bots, flujos de automatización y herramientas de moderación para comunidades digitales.
+Actualmente lidero **[IberaX](https://iberax.net/)**, una consultoría técnica donde diseñamos sistemas deterministas y arquitecturas de software robustas. Mi enfoque prioriza el impacto real en el negocio, asegurando que cada sistema sea un activo escalable, auditable y libre de deuda técnica innecesaria.
 
 ---
 
 ## 🧠 Filosofía de Desarrollo
 
-* **Código Práctico y Funcional:** Rechazo los "arreglos rápidos". Priorizo el rigor estructural, el código versionado y la documentación técnica real.
-* **Innovación Estratégica:** Me apasionan las nuevas tecnologías, pero solo ejecuto integraciones que formen parte de un *blueprint* estratégico y tengan un ROI claro.
-* **Sostenibilidad a Largo Plazo:** Creo sistemas que pueden ser expandidos o auditados en el futuro sin que el motor principal se rompa.
+* **Código Práctico y Funcional:** Rechazo las soluciones temporales que generan problemas futuros. Priorizo el rigor estructural y el código limpio.
+* **Innovación con Propósito:** Me apasionan las nuevas tecnologías, pero solo las implemento cuando aportan un valor estratégico y un retorno claro.
+* **Sostenibilidad Técnica:** Construyo sistemas modulares que permiten el crecimiento y la auditoría constante sin comprometer la estabilidad del motor principal.
 
 ---
 
@@ -58,3 +47,7 @@ Mi enfoque combina un profundo pensamiento crítico con rigor técnico, aseguran
   <i>¿Buscas escalar tu operativa técnica o explorar una colaboración?</i><br>
   <b><a href="mailto:tortilladev1@gmail.com">Escríbeme y lo revisamos. ⚡</a></b>
 </p>
+
+<br>
+
+> **P.D.** La escasez de repositorios públicos en mi perfil no refleja mi actividad real; la gran mayoría de mi código y proyectos se encuentran en repositorios privados y entornos de producción propietarios desarrollados a medida para clientes y sistemas internos.
