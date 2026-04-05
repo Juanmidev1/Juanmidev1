@@ -21,7 +21,7 @@
 
 ## 👨‍💻 Sobre mí
 
-Soy **Tortilla**, desarrollador autodidacta y arquitecto de soluciones apasionado por las nuevas tecnologías y la automatización inteligente. Mi formación se basa en años de práctica, investigación constante y la resolución de problemas reales, lo que me permite abordar el desarrollo desde una perspectiva pragmática, eficiente y sin rodeos.
+Soy **Juanmi**, desarrollador autodidacta y arquitecto de soluciones apasionado por las nuevas tecnologías y la automatización inteligente. Mi formación se basa en años de práctica, investigación constante y la resolución de problemas reales, lo que me permite abordar el desarrollo desde una perspectiva pragmática, eficiente y sin rodeos.
 
 Actualmente lidero **[IberaX](https://iberax.net/)**, una consultoría técnica donde diseñamos sistemas deterministas y arquitecturas de software robustas. Mi enfoque prioriza el impacto real en el negocio, asegurando que cada sistema sea un activo escalable, auditable y libre de deuda técnica innecesaria.
 
