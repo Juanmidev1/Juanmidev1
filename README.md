@@ -1,5 +1,5 @@
 <h1 align="center">juanmidev</h1>
-<h3 align="center">Desarrollador, Arquitecto de Soluciones y Fundador de <a href="https://iberax.net/" target="_blank">IberaX</a></h3>
+<h3 align="center">Desarrollador y Fundador de <a href="https://iberax.net/" target="_blank">IberaX</a></h3>
 
 <p align="center">
   <a href="https://iberax.net/" target="_blank">
