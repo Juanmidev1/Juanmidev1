@@ -67,6 +67,34 @@ A code-intelligence MCP server that connects local repositories with AI assistan
 
 ---
 
+### [net-watch](https://github.com/Eltortilla1/net-watch)
+
+Real-time network packet analyzer for the terminal. Built
+entirely on raw Linux sockets and manual protocol parsing —
+no Scapy, no libpcap, no external capture library of any kind.
+
+**What it does:** captures every Ethernet frame passing through
+a network interface and decodes it to its protocol components
+in real time — active connections, per-destination traffic,
+protocol breakdown (TCP/UDP/ICMP/ARP), and live throughput,
+updated every 500 ms.
+
+**Under the hood:** three concurrent threads (capture →
+processor → display), manual byte-level parsing of IPv4/TCP/
+UDP/ICMP/ARP headers using Python's `struct` module,
+thread-safe statistics with a sliding rate window, non-blocking
+DNS resolution via `ThreadPoolExecutor` with TTL cache, and a
+PCAP writer implemented from scratch (no libpcap) that produces
+files readable by Wireshark.
+
+**Stack:** Python · Raw sockets (`AF_PACKET`) · Rich TUI ·
+threading · struct · termios  
+**Status:** stable, Linux only
+
+[![View repository](https://img.shields.io/badge/View%20repository-net--watch-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Eltortilla1/net-watch)
+
+---
+
 <p align="center">
   <i>Looking to scale your technical operations or explore a collaboration?</i><br>
   <b><a href="mailto:tortilladev1@gmail.com">Reach out and let's talk. ⚡</a></b>
