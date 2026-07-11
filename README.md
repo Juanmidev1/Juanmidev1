@@ -14,36 +14,36 @@
 
 <br>
 
-> **Mi misión:** Transformar el caos operativo en activos tecnológicos rentables y escalables mediante arquitectura modular y código con propósito.
+> **My mission:** Turning operational chaos into profitable, scalable tech assets through modular architecture and purposeful code.
 
 <p align="center">
-  <img src="assets/desk-chase.svg" alt="juanmidev programando en su escritorio; Tux entra corriendo, le lanza una línea de código y sale perseguido por él" width="800" />
+  <img src="assets/desk-chase.svg" alt="juanmidev coding at his desk; Tux runs in, throws a line of code at him, and he chases Tux out of the room" width="800" />
 </p>
 
 ---
 
-## 👨‍💻 Sobre mí
+## 👨‍💻 About me
 
-Soy **Juanmi**, desarrollador autodidacta y arquitecto de soluciones apasionado por las nuevas tecnologías y la automatización inteligente. Mi formación se basa en años de práctica, investigación constante y la resolución de problemas reales, lo que me permite abordar el desarrollo desde una perspectiva pragmática, eficiente y sin rodeos.
+I'm **Juanmi**, a self-taught developer and solutions architect passionate about new technologies and intelligent automation. My skills come from years of hands-on practice, constant research, and solving real-world problems — which lets me approach development from a pragmatic, efficient, no-nonsense perspective.
 
-Actualmente lidero **[IberaX](https://iberax.net/)**, una agencia técnica donde diseñamos sistemas deterministas y arquitecturas de software robustas. Mi enfoque prioriza el impacto real en el negocio, asegurando que cada sistema sea un activo escalable, auditable y libre de deuda técnica innecesaria.
-
----
-
-## 🧠 Filosofía de Desarrollo
-
-* **Código Práctico y Funcional:** Rechazo las soluciones temporales que generan problemas futuros. Priorizo el rigor estructural y el código limpio.
-* **Innovación con Propósito:** Me apasionan las nuevas tecnologías, pero solo las implemento cuando aportan un valor estratégico y un retorno claro.
-* **Sostenibilidad Técnica:** Construyo sistemas modulares que permiten el crecimiento y la auditoría constante sin comprometer la estabilidad del motor principal.
+I currently lead **[IberaX](https://iberax.net/)**, a technical agency where we design deterministic systems and robust software architectures. My focus is on real business impact, making sure every system is a scalable, auditable asset free of unnecessary technical debt.
 
 ---
 
-## 🛠️ Herramientas y tecnologías
+## 🧠 Development Philosophy
 
-No me ato a un stack fijo — me adapto al problema. Estas son las herramientas con las que trabajo habitualmente en producción:
+* **Practical, functional code:** I reject temporary fixes that create future problems. I prioritize structural rigor and clean code.
+* **Innovation with purpose:** I love new technologies, but I only adopt them when they bring clear strategic value and ROI.
+* **Technical sustainability:** I build modular systems that allow for growth and continuous auditing without compromising the stability of the core engine.
+
+---
+
+## 🛠️ Tools & technologies
+
+I don't tie myself to a fixed stack — I adapt to the problem. These are the tools I work with regularly in production:
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,docker,linux,git,github,javascript&theme=light" alt="Herramientas y tecnologías" />
+  <img src="https://skillicons.dev/icons?i=python,docker,linux,git,github,javascript&theme=light" alt="Tools & technologies" />
   <br>
   <img alt="n8n" src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />
   <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" />
@@ -52,26 +52,26 @@ No me ato a un stack fijo — me adapto al problema. Estas son las herramientas 
 
 ---
 
-## 🚀 Proyectos públicos destacados
+## 🚀 Featured public projects
 
 ### [synapse-code-mcp](https://github.com/Eltortilla1/synapse-code-mcp)
 
-Servidor MCP de inteligencia de código que conecta repositorios locales con asistentes de IA vía Model Context Protocol. En lugar de copiar y pegar archivos en el prompt, el asistente explora el código de forma dinámica — extrayendo solo lo que necesita, cuando lo necesita.
+A code-intelligence MCP server that connects local repositories with AI assistants via the Model Context Protocol. Instead of copy-pasting files into the prompt, the assistant explores the codebase dynamically — pulling only what it needs, when it needs it.
 
-**Qué resuelve:** contexto de calidad a escala. La mayoría de herramientas de IA ya indexan archivos; Synapse resuelve un problema distinto: enviar al modelo solo la superficie de API relevante (no el archivo entero), graficar dependencias de imports y ofrecer búsqueda semántica con ripgrep, todo con ratios de compresión verificados por tests automáticos.
+**What it solves:** high-quality context at scale. Most AI tools already index files; Synapse tackles a different problem: sending the model only the relevant API surface (not the whole file), mapping import dependencies, and offering semantic search powered by ripgrep — all with compression ratios verified by automated tests.
 
 **Stack:** TypeScript · Node.js · ts-morph · Vitest · MCP SDK
-**Estado:** activo, contribuciones bienvenidas
+**Status:** active, contributions welcome
 
-[![Ver repositorio](https://img.shields.io/badge/Ver%20repositorio-synapse--code--mcp-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Eltortilla1/synapse-code-mcp)
+[![View repository](https://img.shields.io/badge/View%20repository-synapse--code--mcp-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Eltortilla1/synapse-code-mcp)
 
 ---
 
 <p align="center">
-  <i>¿Buscas escalar tu operativa técnica o explorar una colaboración?</i><br>
-  <b><a href="mailto:tortilladev1@gmail.com">Escríbeme y lo revisamos. ⚡</a></b>
+  <i>Looking to scale your technical operations or explore a collaboration?</i><br>
+  <b><a href="mailto:tortilladev1@gmail.com">Reach out and let's talk. ⚡</a></b>
 </p>
 
 <br>
 
-> **P.D.** La escasez de repositorios públicos en mi perfil no refleja mi actividad real; la gran mayoría de mi código y proyectos se encuentran en repositorios privados y entornos de producción propietarios desarrollados a medida para clientes y sistemas internos.
+> **P.S.** The small number of public repos on my profile doesn't reflect my actual activity — most of my code and projects live in private repositories and production environments built for clients and internal systems.
