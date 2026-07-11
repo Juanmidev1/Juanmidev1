@@ -95,6 +95,36 @@ threading · struct · termios
 
 ---
 
+### [prompt-bench](https://github.com/Eltortilla1/prompt-bench)
+
+CLI to benchmark prompts across multiple LLMs in parallel —
+compare latency, token usage and estimated cost in a single
+terminal table.
+
+**What it does:** send the same prompt to Gemini, GPT and Grok
+simultaneously and get back a Rich table with latency per model,
+input/output tokens, estimated cost in USD, and a visual quality
+bar. Runs are saved as JSON with full responses for later review
+or export.
+
+**Key features:**
+- Parallel async calls to all providers via `asyncio + httpx`
+- `--models provider:model` syntax to target specific model versions
+- `--system` flag for shared system prompt across all providers
+- `--repeat N` to average latency over multiple runs and detect
+  response variance
+- Export any run to Markdown or CSV for documentation
+- Extensible: adding a new provider is a single file + 3 lines
+  in the registry
+
+**Stack:** Python · asyncio · httpx · Rich · Click  
+**Providers:** Gemini · OpenAI · Grok (xAI)  
+**Status:** active
+
+[![View repository](https://img.shields.io/badge/View%20repository-prompt--bench-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Eltortilla1/prompt-bench)
+
+---
+
 <p align="center">
   <i>Looking to scale your technical operations or explore a collaboration?</i><br>
   <b><a href="mailto:tortilladev1@gmail.com">Reach out and let's talk. ⚡</a></b>
