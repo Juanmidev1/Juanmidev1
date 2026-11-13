@@ -43,8 +43,8 @@
     @keyframes clip3 {
       0%     { width: 0px; }
       50%    { width: 0px; }
-      61.11% { width: 442px; }
-      72.22% { width: 442px; }
+      61.11% { width: 259px; }
+      72.22% { width: 259px; }
       75%    { width: 0px; }
       100%   { width: 0px; }
     }
@@ -111,9 +111,9 @@
   <g class="curVis2"><g class="blink"><text x="668" y="88" font-size="16" fill="#00ff41">_</text></g></g>
 
   <!-- phrase 3 -->
-  <clipPath class="clip3" id="clip3"><rect x="179" y="69" width="0" height="22"/></clipPath>
-  <text x="179" y="88" font-size="16" fill="#58a6ff" clip-path="url(#clip3)">Founder @ IberaX &#183; Turning ideas into products</text>
-  <g class="curVis3"><g class="blink"><text x="625" y="88" font-size="16" fill="#00ff41">_</text></g></g>
+  <clipPath class="clip3" id="clip3"><rect x="270" y="69" width="0" height="22"/></clipPath>
+  <text x="270" y="88" font-size="16" fill="#58a6ff" clip-path="url(#clip3)">Turning ideas into products</text>
+  <g class="curVis3"><g class="blink"><text x="533" y="88" font-size="16" fill="#00ff41">_</text></g></g>
 
   <!-- phrase 4 -->
   <clipPath class="clip4" id="clip4"><rect x="198" y="69" width="0" height="22"/></clipPath>

@@ -4,9 +4,6 @@
 
 
 <p align="center">
-  <a href="https://iberax.net/" target="_blank">
-    <img alt="IberaX Website" src="https://img.shields.io/badge/🌐%20IberaX-iberax.net-8ed1ff?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0b1221" />
-  </a>
   <a href="https://discord.com/users/1184951565480624212" target="_blank">
     <img src="https://img.shields.io/badge/💬%20Discord-el_tortilla1-8ed1ff?style=for-the-badge&logo=discord&logoColor=white&labelColor=0b1221" />
   </a>
@@ -26,7 +23,7 @@
 
 I'm **Juanmi**, a self-taught developer and solutions architect passionate about new technologies and intelligent automation. My skills come from years of hands-on practice, constant research, and solving real-world problems — which lets me approach development from a pragmatic, efficient, no-nonsense perspective.
 
-I currently lead **[IberaX](https://iberax.net/)**, a technical agency where we design deterministic systems and robust software architectures. My focus is on real business impact, making sure every system is a scalable, auditable asset free of unnecessary technical debt.
+I design deterministic systems and robust software architectures. My focus is on real business impact, making sure every system is a scalable, auditable asset free of unnecessary technical debt.
 
 ---
 
