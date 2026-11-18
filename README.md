@@ -40,7 +40,7 @@ I design deterministic systems and robust software architectures. My focus is on
 I don't tie myself to a fixed stack — I adapt to the problem. These are the tools I work with regularly in production:
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,docker,linux,git,github,javascript&theme=light" alt="Tools & technologies" />
+  <img src="https://skillicons.dev/icons?i=python,rust,docker,linux,git,github,javascript&theme=light" alt="Tools & technologies" />
   <br>
   <img alt="n8n" src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />
   <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" />
@@ -51,7 +51,26 @@ I don't tie myself to a fixed stack — I adapt to the problem. These are the to
 
 ## 🚀 Featured public projects
 
-### [synapse-code-mcp](https://github.com/Eltortilla1/synapse-code-mcp)
+### [repo-pack](https://github.com/Juanmidev1/repo-pack)
+
+Rust CLI that packs a whole repository into a single text block ready for an LLM context window. Offline, a few milliseconds on a typical repo, shipped as a single binary.
+
+**What it solves:** feeding a model the right code without blowing the token budget. Instead of dumping every file, it can keep only signatures via tree-sitter AST compression (`--skeleton`, `--focus`), redact secrets, and pack just what changed in git plus the files that import it (`--diff main --impact`).
+
+**Key features:**
+- XML or Markdown output, clipboard copy and token statistics (`--stats`, `--max-tokens`)
+- Respects `.gitignore`, with extension, glob and size filters
+- Built-in MCP server so assistants can request packed context directly
+- Prebuilt binaries for Linux, macOS and Windows
+
+**Stack:** Rust · tree-sitter · clap · ignore  
+**Status:** active
+
+[![View repository](https://img.shields.io/badge/View%20repository-repo--pack-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/repo-pack)
+
+---
+
+### [synapse-code-mcp](https://github.com/Juanmidev1/synapse-code-mcp)
 
 A code-intelligence MCP server that connects local repositories with AI assistants via the Model Context Protocol. Instead of copy-pasting files into the prompt, the assistant explores the codebase dynamically — pulling only what it needs, when it needs it.
 
@@ -60,11 +79,30 @@ A code-intelligence MCP server that connects local repositories with AI assistan
 **Stack:** TypeScript · Node.js · ts-morph · Vitest · MCP SDK
 **Status:** active, contributions welcome
 
-[![View repository](https://img.shields.io/badge/View%20repository-synapse--code--mcp-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Eltortilla1/synapse-code-mcp)
+[![View repository](https://img.shields.io/badge/View%20repository-synapse--code--mcp-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/synapse-code-mcp)
 
 ---
 
-### [net-watch](https://github.com/Eltortilla1/net-watch)
+### [mcp-tap](https://github.com/Juanmidev1/mcp-tap)
+
+Transparent `stdio` proxy, JSON-RPC 2.0 profiler and token auditor for Model Context Protocol servers.
+
+**What it solves:** MCP servers over `stdio` are hard to debug, since `stdout` is the transport and you can't see how slow each call is or how many tokens it costs the model. `mcp-tap` wraps the server command, forwards every byte unchanged and writes a `.jsonl` trace of what happened.
+
+**Key features:**
+- Per-call latency, matching requests and responses by JSON-RPC `id` (including server-to-client requests)
+- Token audit per request/response, flagging tool responses over a configurable limit
+- MCP-aware: records tool names, resource URIs, protocol errors and `isError` results
+- Live `tail` of a running session and a `report` summary afterwards
+
+**Stack:** Rust · Tokio · serde · clap  
+**Status:** active, CI on every push
+
+[![View repository](https://img.shields.io/badge/View%20repository-mcp--tap-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/mcp-tap)
+
+---
+
+### [net-watch](https://github.com/Juanmidev1/net-watch)
 
 Real-time network packet analyzer for the terminal. Built
 entirely on raw Linux sockets and manual protocol parsing —
@@ -88,37 +126,7 @@ files readable by Wireshark.
 threading · struct · termios  
 **Status:** stable, Linux only
 
-[![View repository](https://img.shields.io/badge/View%20repository-net--watch-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Eltortilla1/net-watch)
-
----
-
-### [prompt-bench](https://github.com/Eltortilla1/prompt-bench)
-
-CLI to benchmark prompts across multiple LLMs in parallel —
-compare latency, token usage and estimated cost in a single
-terminal table.
-
-**What it does:** send the same prompt to Gemini, GPT and Grok
-simultaneously and get back a Rich table with latency per model,
-input/output tokens, estimated cost in USD, and a visual quality
-bar. Runs are saved as JSON with full responses for later review
-or export.
-
-**Key features:**
-- Parallel async calls to all providers via `asyncio + httpx`
-- `--models provider:model` syntax to target specific model versions
-- `--system` flag for shared system prompt across all providers
-- `--repeat N` to average latency over multiple runs and detect
-  response variance
-- Export any run to Markdown or CSV for documentation
-- Extensible: adding a new provider is a single file + 3 lines
-  in the registry
-
-**Stack:** Python · asyncio · httpx · Rich · Click  
-**Providers:** Gemini · OpenAI · Grok (xAI)  
-**Status:** active
-
-[![View repository](https://img.shields.io/badge/View%20repository-prompt--bench-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Eltortilla1/prompt-bench)
+[![View repository](https://img.shields.io/badge/View%20repository-net--watch-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/net-watch)
 
 ---
 
