@@ -1,47 +1,47 @@
 <p align="center">
-  <img src="assets/header.svg" alt="Juanmi — Software engineer &amp; automation architect" width="800" />
+  <img src="assets/header.svg" alt="Juanmi — Self-taught developer &amp; automation architect" width="800" />
 </p>
-
 
 <p align="center">
   <a href="https://discord.com/users/1184951565480624212" target="_blank">
-    <img src="https://img.shields.io/badge/💬%20Discord-el_tortilla1-8ed1ff?style=for-the-badge&logo=discord&logoColor=white&labelColor=0b1221" />
+    <img src="https://img.shields.io/badge/Discord-el__tortilla1-8ed1ff?style=for-the-badge&logo=discord&logoColor=white&labelColor=0b1221" alt="Discord" />
+  </a>
+  <a href="https://www.tiktok.com/@juanmimendes1" target="_blank">
+    <img src="https://img.shields.io/badge/TikTok-@juanmimendes1-8ed1ff?style=for-the-badge&logo=tiktok&logoColor=white&labelColor=0b1221" alt="TikTok" />
+  </a>
+  <a href="https://www.youtube.com/@Juanmidev1" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-@Juanmidev1-8ed1ff?style=for-the-badge&logo=youtube&logoColor=white&labelColor=0b1221" alt="YouTube" />
   </a>
 </p>
 
 <br>
 
-> **My mission:** Turning operational chaos into profitable, scalable tech assets through modular architecture and purposeful code.
+> **Focus:** Building fast, deterministic tools at the intersection of **AI agent infrastructure**, **low-level Linux systems**, and **production automation**.
 
 <p align="center">
-  <img src="assets/desk-chase.svg" alt="juanmidev coding at his desk; Tux runs in, throws a line of code at him, and he chases Tux out of the room" width="800" />
+  <img src="assets/desk-chase.svg" alt="Juanmi coding at his desk; Tux runs in, throws a line of code at him, and he chases Tux out of the room" width="800" />
 </p>
 
 ---
 
 ## 👨‍💻 About me
 
-I'm **Juanmi**, a self-taught developer and solutions architect passionate about new technologies and intelligent automation. My skills come from years of hands-on practice, constant research, and solving real-world problems — which lets me approach development from a pragmatic, efficient, no-nonsense perspective.
+I'm **Juanmi**, a self-taught developer and solutions architect focused on systems programming, AI tooling, and workflow automation. Everything I build comes from hands-on experimentation, reading specs and source code, and solving real operational bottlenecks.
 
-I design deterministic systems and robust software architectures. My focus is on real business impact, making sure every system is a scalable, auditable asset free of unnecessary technical debt.
+On the **production side**, I design deterministic automation pipelines and custom integrations for businesses. On the **open-source side**, I build single-binary CLIs, Model Context Protocol (MCP) infrastructure, and low-level Linux networking/security tools.
 
----
-
-## 🧠 Development Philosophy
-
-* **Practical, functional code:** I reject temporary fixes that create future problems. I prioritize structural rigor and clean code.
-* **Innovation with purpose:** I love new technologies, but I only adopt them when they bring clear strategic value and ROI.
-* **Technical sustainability:** I build modular systems that allow for growth and continuous auditing without compromising the stability of the core engine.
+- **How I build:** Minimal dependencies, strict architectural boundaries, and measurable performance over bloated abstractions.
+- **Currently exploring:** Offensive security, Linux kernel sandboxing (Landlock / seccomp), and binary analysis tooling for AI agents.
+- **Content:** Sharing 1-minute deep dives on Rust, systems, and AI tooling on [TikTok](https://www.tiktok.com/@juanmimendes1) and [YouTube](https://www.youtube.com/@Juanmidev1).
 
 ---
 
-## 🛠️ Tools & technologies
-
-I don't tie myself to a fixed stack — I adapt to the problem. These are the tools I work with regularly in production:
+## 🛠️ Core Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,rust,docker,linux,git,github,javascript&theme=light" alt="Tools & technologies" />
+  <img src="https://skillicons.dev/icons?i=rust,python,ts,linux,docker,git,github&theme=light" alt="Core stack" />
   <br>
+  <img alt="MCP" src="https://img.shields.io/badge/MCP-0b1221?style=for-the-badge&logo=anthropic&logoColor=8ed1ff" />
   <img alt="n8n" src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />
   <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" />
   <img alt="Gemini API" src="https://img.shields.io/badge/Gemini%20API-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" />
@@ -49,92 +49,61 @@ I don't tie myself to a fixed stack — I adapt to the problem. These are the to
 
 ---
 
-## 🚀 Featured public projects
+## 🚀 Featured Open-Source Projects
 
-### [repo-pack](https://github.com/Juanmidev1/repo-pack)
+Most of my public work revolves around **giving AI agents surgical context and runtime visibility**, alongside **low-level Linux utilities**:
 
-Rust CLI that packs a whole repository into a single text block ready for an LLM context window. Offline, a few milliseconds on a typical repo, shipped as a single binary.
+### [repo-pack](https://github.com/Juanmidev1/repo-pack) — Semantic Context Compression for LLMs
+Single-binary Rust CLI & MCP server that packs local or remote repositories into LLM-ready XML/Markdown without blowing the token budget.
 
-**What it solves:** feeding a model the right code without blowing the token budget. Instead of dumping every file, it can keep only signatures via tree-sitter AST compression (`--skeleton`, `--focus`), redact secrets, and pack just what changed in git plus the files that import it (`--diff main --impact`).
+- **Surgical context:** Cuts function bodies via `tree-sitter` AST compression (`--skeleton`, `--focus`) saving up to ~68% of tokens while keeping signatures and types intact.
+- **Git & security aware:** Packs only changed files plus their importers (`--diff`, `--impact`), redacts API keys/secrets by default, and clones remote Git URLs on the fly.
+- **Lightweight:** Ships as a single offline binary (`<3 MB` minimal build) with prebuilt releases for Linux, macOS, and Windows.
 
-**Key features:**
-- XML or Markdown output, clipboard copy and token statistics (`--stats`, `--max-tokens`)
-- Respects `.gitignore`, with extension, glob and size filters
-- Built-in MCP server so assistants can request packed context directly
-- Prebuilt binaries for Linux, macOS and Windows
-
-**Stack:** Rust · tree-sitter · clap · ignore  
-**Status:** active
-
+`Rust` · `tree-sitter` · `clap` · `ignore` · `MCP`  
 [![View repository](https://img.shields.io/badge/View%20repository-repo--pack-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/repo-pack)
 
 ---
 
-### [synapse-code-mcp](https://github.com/Juanmidev1/synapse-code-mcp)
+### [mcp-tap](https://github.com/Juanmidev1/mcp-tap) — Transparent Profiler & Token Auditor for MCP
+Transparent `stdio` proxy that sits between an MCP client and server, forwarding every byte unchanged while recording latency, errors, and token cost to a `.jsonl` trace.
 
-A code-intelligence MCP server that connects local repositories with AI assistants via the Model Context Protocol. Instead of copy-pasting files into the prompt, the assistant explores the codebase dynamically — pulling only what it needs, when it needs it.
+- **Protocol-level visibility:** Correlates JSON-RPC 2.0 requests and responses by `id` (including server-initiated sampling) without breaking `stdout` transport.
+- **Token & latency guardrails:** Measures per-tool execution time, flags oversized responses (`--max-response-tokens`), and catches stray non-JSON-RPC output.
+- **Live & post-mortem:** Includes `mcp-tap tail` for real-time terminal monitoring and `mcp-tap report` for per-tool breakdowns.
 
-**What it solves:** high-quality context at scale. Most AI tools already index files; Synapse tackles a different problem: sending the model only the relevant API surface (not the whole file), mapping import dependencies, and offering semantic search powered by ripgrep — all with compression ratios verified by automated tests.
-
-**Stack:** TypeScript · Node.js · ts-morph · Vitest · MCP SDK
-**Status:** active, contributions welcome
-
-[![View repository](https://img.shields.io/badge/View%20repository-synapse--code--mcp-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/synapse-code-mcp)
-
----
-
-### [mcp-tap](https://github.com/Juanmidev1/mcp-tap)
-
-Transparent `stdio` proxy, JSON-RPC 2.0 profiler and token auditor for Model Context Protocol servers.
-
-**What it solves:** MCP servers over `stdio` are hard to debug, since `stdout` is the transport and you can't see how slow each call is or how many tokens it costs the model. `mcp-tap` wraps the server command, forwards every byte unchanged and writes a `.jsonl` trace of what happened.
-
-**Key features:**
-- Per-call latency, matching requests and responses by JSON-RPC `id` (including server-to-client requests)
-- Token audit per request/response, flagging tool responses over a configurable limit
-- MCP-aware: records tool names, resource URIs, protocol errors and `isError` results
-- Live `tail` of a running session and a `report` summary afterwards
-
-**Stack:** Rust · Tokio · serde · clap  
-**Status:** active, CI on every push
-
+`Rust` · `Tokio` · `serde` · `clap` · `JSON-RPC 2.0`  
 [![View repository](https://img.shields.io/badge/View%20repository-mcp--tap-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/mcp-tap)
 
 ---
 
-### [net-watch](https://github.com/Juanmidev1/net-watch)
+### [synapse-code-mcp](https://github.com/Juanmidev1/synapse-code-mcp) — Dynamic Code-Intelligence MCP Server
+Stateless Model Context Protocol server that lets AI assistants explore TypeScript/JavaScript codebases dynamically instead of dumping entire files into context.
 
-Real-time network packet analyzer for the terminal. Built
-entirely on raw Linux sockets and manual protocol parsing —
-no Scapy, no libpcap, no external capture library of any kind.
+- **API surface extraction:** Uses AST analysis (`ts-morph`) to expose exported symbols, map import graphs, and run fast `ripgrep` searches on demand.
+- **Verified compression:** Backed by 290+ automated tests measuring token reduction ratios across real codebases.
 
-**What it does:** captures every Ethernet frame passing through
-a network interface and decodes it to its protocol components
-in real time — active connections, per-destination traffic,
-protocol breakdown (TCP/UDP/ICMP/ARP), and live throughput,
-updated every 500 ms.
+`TypeScript` · `Node.js` · `ts-morph` · `Vitest` · `MCP SDK`  
+[![View repository](https://img.shields.io/badge/View%20repository-synapse--code--mcp-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/synapse-code-mcp)
 
-**Under the hood:** three concurrent threads (capture →
-processor → display), manual byte-level parsing of IPv4/TCP/
-UDP/ICMP/ARP headers using Python's `struct` module,
-thread-safe statistics with a sliding rate window, non-blocking
-DNS resolution via `ThreadPoolExecutor` with TTL cache, and a
-PCAP writer implemented from scratch (no libpcap) that produces
-files readable by Wireshark.
+---
 
-**Stack:** Python · Raw sockets (`AF_PACKET`) · Rich TUI ·
-threading · struct · termios  
-**Status:** stable, Linux only
+### [net-watch](https://github.com/Juanmidev1/net-watch) — Zero-Dependency Linux Packet Analyzer
+Real-time terminal network monitor built directly on raw Linux sockets (`AF_PACKET`) and manual byte-level header parsing — no `libpcap`, no Scapy.
 
+- **From-scratch protocol stack:** Decodes Ethernet, ARP, IPv4, TCP, UDP, and ICMP headers manually via `struct`, tracking live throughput, active connections, and per-protocol traffic breakdown.
+- **Concurrent pipeline:** Three-thread architecture (capture → processor → Rich TUI) with non-blocking DNS TTL cache and a custom Wireshark-compatible PCAP writer.
+
+`Python` · `Raw Sockets (AF_PACKET)` · `Rich TUI` · `Linux`  
 [![View repository](https://img.shields.io/badge/View%20repository-net--watch-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/net-watch)
 
 ---
 
 <p align="center">
-  <i>Looking to scale your technical operations or explore a collaboration?</i><br>
-  <b><a href="mailto:tortilladev1@gmail.com">Reach out and let's talk. ⚡</a></b>
+  <i>Building AI infrastructure, custom automation, or developer tools?</i><br>
+  <b><a href="mailto:tortilladev1@gmail.com">Get in touch ⚡</a></b>
 </p>
 
 <br>
 
-> **P.S.** The small number of public repos on my profile doesn't reflect my actual activity — most of my code and projects live in private repositories and production environments built for clients and internal systems.
+> **P.S.** The small number of public repositories on this profile doesn't reflect my overall activity — most of my production code lives in private repositories built for client systems and internal automation infrastructure.
