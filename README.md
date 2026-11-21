@@ -31,7 +31,7 @@ I'm **Juanmi**, a self-taught developer and solutions architect focused on syste
 On the **production side**, I design deterministic automation pipelines and custom integrations for businesses. On the **open-source side**, I build single-binary CLIs, Model Context Protocol (MCP) infrastructure, and low-level Linux networking/security tools.
 
 - **How I build:** Minimal dependencies, strict architectural boundaries, and measurable performance over bloated abstractions.
-- **Currently exploring:** Offensive security, Linux kernel sandboxing (Landlock / seccomp), and binary analysis tooling for AI agents.
+- **Currently exploring:** Offensive security and binary analysis tooling for AI agents.
 - **Content:** Sharing 1-minute deep dives on Rust, systems, and AI tooling on [TikTok](https://www.tiktok.com/@juanmimendes1) and [YouTube](https://www.youtube.com/@Juanmidev1).
 
 ---
@@ -51,7 +51,7 @@ On the **production side**, I design deterministic automation pipelines and cust
 
 ## 🚀 Featured Open-Source Projects
 
-Most of my public work revolves around **giving AI agents surgical context and runtime visibility**, alongside **low-level Linux utilities**:
+Most of my public work revolves around **giving AI agents surgical context, runtime visibility and kernel-level isolation**, alongside **low-level Linux utilities**:
 
 ### [repo-pack](https://github.com/Juanmidev1/repo-pack) — Semantic Context Compression for LLMs
 Single-binary Rust CLI & MCP server that packs local or remote repositories into LLM-ready XML/Markdown without blowing the token budget.
@@ -74,6 +74,18 @@ Transparent `stdio` proxy that sits between an MCP client and server, forwarding
 
 `Rust` · `Tokio` · `serde` · `clap` · `JSON-RPC 2.0`  
 [![View repository](https://img.shields.io/badge/View%20repository-mcp--tap-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/mcp-tap)
+
+---
+
+### [mcp-jail](https://github.com/Juanmidev1/mcp-jail) - Rootless Kernel Sandbox & Syscall Auditor for MCP
+Wraps any `stdio` MCP server in **Landlock LSM** and **`seccomp` user notifications** (no root, no containers) and tags every blocked syscall with the JSON-RPC tool call that triggered it.
+
+- **Kernel-enforced isolation:** Landlock confines the filesystem at inode level, while a `seccomp-unotify` supervisor blocks secrets inside the workspace (`.env`, `*.pem`, SSH keys), outbound connections and child processes.
+- **Tool-level attribution:** Correlates each kernel event with the in-flight request, e.g. `[tools/call: summarize_readme] BLOCKED openat(".env") -> EACCES`.
+- **Least privilege by observation:** `mcp-jail profile` records a session and writes a minimal `mcp-jail.toml`; `tail` and `report` give live and post-session views. Single ~1.4 MB binary, no async runtime.
+
+`Rust` · `Landlock` · `seccomp` · `libc` · `MCP`  
+[![View repository](https://img.shields.io/badge/View%20repository-mcp--jail-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/mcp-jail)
 
 ---
 
