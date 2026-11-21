@@ -65,18 +65,6 @@ Single-binary Rust CLI & MCP server that packs local or remote repositories into
 
 ---
 
-### [mcp-tap](https://github.com/Juanmidev1/mcp-tap) — Transparent Profiler & Token Auditor for MCP
-Transparent `stdio` proxy that sits between an MCP client and server, forwarding every byte unchanged while recording latency, errors, and token cost to a `.jsonl` trace.
-
-- **Protocol-level visibility:** Correlates JSON-RPC 2.0 requests and responses by `id` (including server-initiated sampling) without breaking `stdout` transport.
-- **Token & latency guardrails:** Measures per-tool execution time, flags oversized responses (`--max-response-tokens`), and catches stray non-JSON-RPC output.
-- **Live & post-mortem:** Includes `mcp-tap tail` for real-time terminal monitoring and `mcp-tap report` for per-tool breakdowns.
-
-`Rust` · `Tokio` · `serde` · `clap` · `JSON-RPC 2.0`  
-[![View repository](https://img.shields.io/badge/View%20repository-mcp--tap-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/mcp-tap)
-
----
-
 ### [mcp-jail](https://github.com/Juanmidev1/mcp-jail) - Rootless Kernel Sandbox & Syscall Auditor for MCP
 Wraps any `stdio` MCP server in **Landlock LSM** and **`seccomp` user notifications** (no root, no containers) and tags every blocked syscall with the JSON-RPC tool call that triggered it.
 
@@ -86,6 +74,18 @@ Wraps any `stdio` MCP server in **Landlock LSM** and **`seccomp` user notificati
 
 `Rust` · `Landlock` · `seccomp` · `libc` · `MCP`  
 [![View repository](https://img.shields.io/badge/View%20repository-mcp--jail-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/mcp-jail)
+
+---
+
+### [mcp-tap](https://github.com/Juanmidev1/mcp-tap) — Transparent Profiler & Token Auditor for MCP
+Transparent `stdio` proxy that sits between an MCP client and server, forwarding every byte unchanged while recording latency, errors, and token cost to a `.jsonl` trace.
+
+- **Protocol-level visibility:** Correlates JSON-RPC 2.0 requests and responses by `id` (including server-initiated sampling) without breaking `stdout` transport.
+- **Token & latency guardrails:** Measures per-tool execution time, flags oversized responses (`--max-response-tokens`), and catches stray non-JSON-RPC output.
+- **Live & post-mortem:** Includes `mcp-tap tail` for real-time terminal monitoring and `mcp-tap report` for per-tool breakdowns.
+
+`Rust` · `Tokio` · `serde` · `clap` · `JSON-RPC 2.0`  
+[![View repository](https://img.shields.io/badge/View%20repository-mcp--tap-8ed1ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1221)](https://github.com/Juanmidev1/mcp-tap)
 
 ---
 
